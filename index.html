@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- head -->
+    <h1>Registration</h1>
+
+    <!-- form content -->
+    <form
+      class="container"
+      id="formRegistration"
+      onsubmit="handleSubmit(event)"
+    >
+      <input
+        type="text"
+        id="usersName"
+        class="input-height"
+        oninput="handleNameChange()"
+        placeholder="Enter your name"
+      />
+      <p id="errorName"></p>
+      <!-- <input
+        type="text"
+        id="usersEmail"
+        class="input-height"
+        oninput="handleEmailChange()"
+        placeholder="Enter your email"
+      />
+      <p errorEmail></p> -->
+      <input
+        type="password"
+        id="password"
+        class="input-height"
+        oninput="handlePassChange()"
+        placeholder="Enter your Password"
+      />
+      <p id="errorPass"></p>
+
+      <input
+        type="password"
+        id="confirmPass"
+        oninput="enterConfirm()"
+        placeholder="Confirm your password"
+      />
+      <p id="errorConfirm"></p>
+
+      <div id="submit"></div>
+      <span><input type="checkbox" />I accept all terms & conditions</span>
+      <br />
+
+      <button id="btnRegister" type="submit">Register Now</button>
+      <script src="index.js"></script>
+      <p>Already have an account? <span class="Login">Login now</span></p>
+    </form>
+  </body>
+</html>
