@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="learn.css" />
+  </head>
+  <body>
+    <div id="wrapped">
+      <!-- Form thong tin hoa vien -->
+
+      <form class="containerStudentInfor" onsubmit="handleSubmit(event)">
+        <h3>Thông tin học viên</h3>
+        <div>
+          <label for="fullName">Họ và tên</label>
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div>
+          <label for="phone">Số điện thoại</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Enter your phone number"
+          />
+        </div>
+        <div>
+          <label for="address">Quê quán</label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            placeholder="Enter your address"
+          />
+        </div>
+        <div>
+          <label for="gender">Giới tính</label>
+          <input
+            style="margin-left: 34px"
+            type="radio"
+            name="gender"
+            value="male"
+          />Nam <input type="radio" name="gender" value="female" />Nữ
+          <input type="radio" name="gender" value="other" />Khác
+        </div>
+        <button id="save" type="submit">LƯU LẠI</button>
+
+        <!-- <button id="add" onclick="handleSubmit(event)">ADD</button> -->
+        <!-- <button id="save" style="display: none" onclick="saveScholar()"> -->
+          SAVE
+        </button>
+
+        <br />
+      </form>
+
+      <!-- Form Danh sach hoc vien -->
+      <form id="containerScholar">
+        <h3>Danh sách học sinh</h3>
+        <div class="search">
+          <label>Tìm kiếm học viên</label>
+          <input
+            type="text"
+            id="searchScholarName"
+            name="searchScholarName"
+            oninput="inputSearchStudentName()"
+          />
+          <button type="submit" id="btnSearch">Search</button>
+        </div>
+        <div class="data">
+          <table id="tableScholarList">
+            <tr>
+              <th>id</th>
+              <th>Họ tên</th>
+              <th>Email</th>
+              <th>Điện thoại</th>
+              <th>Địa chỉ</th>
+              <th>Gender</th>
+              <th>Hành động</th>
+              <th>
+                <button>sắp xếp(alpha b)</button>
+              </th>
+            </tr>
+            <!-- <tr>
+            <td>1</td>
+            <td>rikkei</td>
+            <td>rikkei@gmail.com</td>
+            <td>0823868888</td>
+            <th>hà nội</th>
+            <th>nam</th>
+            <th>
+              <nav>
+                <ul>
+                  <li><button class="btnedit">edit</button></li>
+                  <span>|</span>
+                  <li><button class="btnedit">delete</button></li>
+                </ul>
+              </nav>
+            </th>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>academy</td>
+            <td>academy@gmail.com</td>
+            <td>0823868888</td>
+            <th>HCM</th>
+            <th>Nữ</th>
+            <th>
+              <ul >
+              <li><u>edit</u></li>
+              <li><u>delete</u></li>
+            </ul>
+          </nav></th> -->
+            <!-- </tr> -->
+            <tbody id="tbody2"></tbody>
+          </table>
+        </div>
+      </form>
+    </div>
+    <script src="./learn.js"></script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+/* THONG TIN HOC VIEN */
+#wrapped {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+.containerStudentInfor {
+  display: flex;
+  height: 500px;
+  width: 390px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* margin: 0 auto; */
+  margin-left: 100px;
+  background-color: rgb(195, 255, 255);
+}
+h3 {
+  font-size: 1.4em;
+  margin-left: 118px;
+  margin-bottom: -5px;
+}
+#btnStudent {
+  width: 190px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-left: 23px;
+}
+#studentName {
+  padding: 10px 26px 10px 26px;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid gray;
+  margin-left: 30px;
+}
+#studentEmail {
+  padding: 10px 26px 10px 26px;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid gray;
+  margin-left: 54px;
+}
+#studentPhone {
+  margin-left: 9px;
+  width: 208px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+#studentAddress {
+  margin-left: 30px;
+  width: 208px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+#btnStudent {
+  width: 190px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-left: 105px;
+}
+
+/* DANH SACH HOC VIEN */
+#tableScholarList {
+  border: 1px solid black;
+}
+td,
+th {
+  border: 1px solid black;
+  text-align: center;
+}
+li {
+  display: inline-block;
+  /* border-bottom: 1px; */
+  margin: 0 5px;
+  background-color: white;
+  border: none;
+  color: blue;
+  /* padding-left: 10px; */
+}
+.btnedit {
+  background-color: white;
+  border: none;
+  color: blue;
+  text-decoration: underline;
+}
+ul {
+  padding-left: 10px;
+}
+
+.search {
+  display: flex;
+  margin: 35px;
+}

@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+  margin: 20px auto;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#td1 {
+  background-color: red;
+  color: white;
+}
+
+#tbody1 tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#tbody1 tr:hover {
+  background-color: #ddd;
+}
+
+#tbody1 td {
+  padding: 8px;
+}
+
+#tbody1 td:last-child,
+#tbody1 td:nth-last-child(2) {
+  text-align: center;
+}
+
+#tbody1 td:last-child button,
+#tbody1 td:nth-last-child(2) button {
+  background-color: #ff3333;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#tbody1 td:last-child button:hover,
+#tbody1 td:nth-last-child(2) button:hover {
+  background-color: #cc0000;
+}

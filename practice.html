@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Management</title>
+  </head>
+  <body>
+    <!-- CRUD -->
+    <!-- C: Create -->
+    <!-- R: Read -->
+    <!-- U: update -->
+    <!-- D: delete -->
+    <!-- Hiển thị - thêm - xóa - sửa -->
+    <!-- Table -->
+    <!-- table -->
+    <!-- th: table header: phần đầu -->
+    <!-- tr: table row: 1 dòng -->
+    <!-- td: table data -->
+    <h1>Quản lý sinh viên</h1>
+    <table border="1">
+      <tr>
+        <th colspan="3" style="text-align: center">Thông tin sinh viên</th>
+      </tr>
+
+      <tr>
+        <td>
+          <label for="fullName"> Họ và tên </label>
+        </td>
+        <td>
+          <input type="text" id="fullName" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <label for="date"> Ngày sinh </label>
+        </td>
+        <td>
+          <input type="date" id="date" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <label for="gender"> Giới tính </label>
+        </td>
+        <td>
+          <select name="gender" id="gender">
+            <option value="male">Nam</option>
+            <option value="female">Nữ</option>
+            <option value="lgbt">LGBT</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <label for="classmate"> Lớp </label>
+        </td>
+        <td>
+          <input type="text" id="classmate" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <label for="image"> Ảnh </label>
+        </td>
+        <td>
+          <input type="text" id="image" />
+        </td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td>
+          <button id="add" onclick="addStudent()">ADD</button>
+          <button id="save" style="display: none" onclick="saveStudent()">
+            SAVE
+          </button>
+        </td>
+      </tr>
+    </table>
+
+    <table border="1">
+      <th
+        colspan="8"
+        style="text-align: center; background-color: red"
+        id="td1"
+      >
+        DANH SÁCH SINH VIÊN
+      </th>
+
+      <tr>
+        <td>Họ và tên</td>
+        <td>Ngày sinh</td>
+        <td>Giới tính</td>
+        <td>Lớp</td>
+        <td>Ảnh</td>
+        <td>Edit</td>
+        <td>Delete</td>
+      </tr>
+      <tbody id="tbody1"></tbody>
+    </table>
+
+    <script src="./practice.js"></script>
+  </body>
+</html>
